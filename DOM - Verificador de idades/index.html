@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>VERIFICADOR DE IDADES</h1>
+    <form>
+        <h2>ATIVIDADE DE SALA:</h2>
+        <fieldset>
+            <legend>Verificador de Idades</legend>
+            <!-- Vou levar em conta que existe a possibilidade de uma pessoa calcular a idade de alguém já morto -->
+            <label for="name">Ano de Nascimento: <input type="number" name="birth-age" id="age"></label>
+            <div>
+                <p>Sexo:</p><input type="radio" value="Homem" name="gender" class="gender"><label> Masculino</label> <input type="radio"
+                    value="Mulher" name="gender" class="gender"><label> Feminino</label>
+            </div>
+            <button type="button" onclick="verificar()">VERIFICAR</button>
+            <div id="resultado"></div>
+        </fieldset>
+    </form>
+    
+    <script src="js.js"></script>
+</body>
+
+</html>
