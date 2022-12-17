@@ -4,7 +4,6 @@ function verificar(){
     let ano_atual = datahj.getFullYear()
     let ano_nasc = document.querySelector('input#age')
     let idade = datahj.getFullYear() - ano_nasc.value
-    let genero = ''
     let resposta = document.querySelector('div#resultado')
     let img = document.createElement('img')
     img.setAttribute('id', 'imagem')
@@ -61,6 +60,6 @@ function verificar(){
     }
 
     resposta.innerHTML = `${gender} com ${idade} anos`
-    resposta.innerHTML(img)
+    resposta.appendChild(img)
     
 }
