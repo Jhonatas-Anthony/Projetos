@@ -1,4 +1,4 @@
-function verificar(){
+function verificar() {
     //pegar elementos do input
     let datahj = new Date()
     let ano_atual = datahj.getFullYear()
@@ -9,57 +9,62 @@ function verificar(){
     img.setAttribute('id', 'imagem')
     let gender = document.querySelector('input[class="gender"]:checked').value
 
-    if (ano_nasc = '' || ano_nasc > ano_atual){
+    if (ano_nasc = '' || (ano_nasc.value) > ano_atual) {
         alert("Algo deu errado, confira os dados e tente novamente :)")
     }
-    else if (gender === 'Masculino'){
-            if (idade >= 0 && idade <= 12){
-                img.setAttribute('src', 'images/hcriança.png')
+    else {
+        if (gender === 'Masculino') {
+            if (idade >= 0 && idade <= 12) {
+                img.setAttribute("src", "images/menino-menino.png")
+            }
+            else if (idade <= 18) {
+                img.setAttribute('src', '')
+            }
+            else if (idade <= 30) {
+                img.setAttribute('src', '')
+            }
+            else if (idade <= 50) {
+                img.setAttribute('src', '')
+            }
+            else if (idade <= 70) {
+                img.setAttribute('src', '')
+            }
+            else if (idade <= 100) {
+                img.setAttribute('src', '')
+            }
+            else if (idade > 100) {
+                img.setAttribute('src', '')
+            }
         }
-        else if (idade <= 18){
-            img.setAttribute('src', 'images/hadolecente.png')
+        else if (gender === 'Feminino') {
+            if (idade >= 0 && idade <= 12) {
+                img.setAttribute('src', '')
+            }
+            else if (idade <= 18) {
+                img.setAttribute('src', '')
+            }
+            else if (idade <= 30) {
+                img.setAttribute('src', '')
+            }
+            else if (idade <= 50) {
+                img.setAttribute('src', '')
+            }
+            else if (idade <= 70) {
+                img.setAttribute('src', '')
+            }
+            else if (idade <= 100) {
+                img.setAttribute('src', '')
+            }
+            else if (idade > 100) {
+                img.setAttribute('src', '')
+            }
         }
-        else if (idade <= 30){
-            img.setAttribute('src', 'images/hjovem')
-        }
-        else if (idade <= 50){
-            img.setAttribute('src', 'images/hadulto')
-        }
-        else if (idade <= 70){
-            img.setAttribute('src', 'images/hvelho')
-        }
-        else if (idade <= 100){
-            img.setAttribute('src', 'images/hidoso')
-        }
-        else if (idade > 100){
-            img.setAttribute('src', 'images/mh')
-        }
-    }
-    else if (gender === 'Feminino'){
-        if (idade >= 0 && idade <= 12){
-            img.setAttribute('src', 'images/mcriança')
-        }
-        else if (idade <= 18){
-            img.setAttribute('src', 'images/madolecente')
-        }
-        else if (idade <= 30){
-            img.setAttribute('src', 'images/mmjovem')
-        }
-        else if (idade <= 50){
-            img.setAttribute('src', 'images/madulto')
-        }
-        else if (idade <= 70){
-            img.setAttribute('src', 'images/velha')
-        }
-        else if (idade <= 100){
-            img.setAttribute('src', 'images/midosa')
-        }
-        else if (idade > 100){
-            img.setAttribute('src', 'images/mh')
-        }
+        resposta.innerHTML = `${gender} com ${idade} anos`
+        resposta.appendChild(img)
+        console.log(resposta.appendChild(img))
     }
 
-    resposta.innerHTML = `${gender} com ${idade} anos`
-    resposta.appendChild(img)
-    
+
+
+
 }
