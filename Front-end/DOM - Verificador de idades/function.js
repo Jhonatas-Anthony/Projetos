@@ -56,7 +56,6 @@ function verificar() {
         resposta.style.textAlign = 'center'
         resposta.innerHTML = `${gender} com ${idade} anos`
         resposta.appendChild(img)
-        console.log(resposta.appendChild(img))
     }
 
 
