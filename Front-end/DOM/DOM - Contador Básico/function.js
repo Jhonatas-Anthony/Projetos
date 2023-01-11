@@ -17,16 +17,7 @@ function contador() {
         }
     }
 
-
-
-
-
     resultado.innerHTML = `Começando a contagem... ${"<br>"} ${lista.join(" 👉 ")} 👉 Fim 🏁`
 
-
     console.log(resultado.clientHeight)
-
-    if (resultado.clientHeight > 250) {
-        resultado.style.overflowY = "scroll";
-    }
 }
