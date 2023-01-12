@@ -16,8 +16,11 @@ function contador() {
             lista.push(i)
         }
     }
+    
+    resultado.innerHTML = `Começando a contagem... ${"<br>"} ${lista.join(" >> ")} >> Fim 🏁`
 
-    resultado.innerHTML = `Começando a contagem... ${"<br>"} ${lista.join(" 👉 ")} 👉 Fim 🏁`
+if (resultado.getBoundingClientRect().height >= 200){
+        resultado.style.overflowY = "scroll"
+    }
 
-    console.log(resultado.clientHeight)
 }
