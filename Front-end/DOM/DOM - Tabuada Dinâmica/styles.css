@@ -1,55 +1,97 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     font-size: 62.5%;
 }
+
 /* Estilização do html */
 
-body{
-    height: 100vh;
+body {
+    height: calc(100vh - 10rem);
     font-size: 2.2rem;
-    font-family: 'Ubunto';  
+    font-family: 'Ubunto';
+    background-color: black;
+    color: azure;
 }
-h1{
+
+.background {
+    position: relative;
+    width: 60rem;
+    margin: 15rem auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #131220;
+    padding: 10px;
+}
+
+.background::before,
+.background::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(30deg, #264653, #2a9d8f, #e9c46a, #f4a261, #e76f51);
+    background-size: 300% 300%;
+    border-radius: 5px;
+    animation: bordaAnimada 3s ease infinite ;
+}
+
+.background::after{
+    filter: blur(40px);
+}
+
+h1 {
     text-align: center;
     margin-top: 2rem;
 }
-form{
+
+form {
     max-width: 600px;
     padding: 1.2rem;
     margin: 3.2rem auto;
     border-radius: 10px;
-
 }
-fieldset{
+.formDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+fieldset {
+    position: relative;
     padding: 0.9rem;
     height: max-content;
     display: flex;
     flex-direction: column;
+
 }
 
-fieldset>div{
+
+fieldset>div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-fieldset *{
-    margin: 5px;
-    
-}
-input[type="number"]{
-    height: 2.6rem;
+
+input[type="number"] {
+    height: 3rem;
     border: 0;
     border-radius: 5px;
     outline: none;
     padding: 0 5px;
     cursor: pointer;
+    margin: 5px;
 }
-button{
+
+button {
     height: 3rem;
     font-size: 1.6rem;
     font-weight: 600;
@@ -57,13 +99,26 @@ button{
     border: 0;
     border-radius: 5px;
     cursor: pointer;
+    margin: 5px;
 }
-select#resultado{
-    border: 1px solid black;
-    width: fit-content;
-    overflow-y: scroll;
 
-    /* display: flex;
-    flex-direction: column;
-    gap: 20px; */
+select#resultado {
+    font-size: 2rem;
+    width: fit-content;
+    overflow-y: hidden;
+    margin: 15px 20px;
+}
+
+@keyframes bordaAnimada {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }

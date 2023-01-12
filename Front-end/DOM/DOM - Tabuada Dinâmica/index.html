@@ -10,24 +10,26 @@
 </head>
 
 <body>
-    <h1>TABUADA</h1>
-    <form>
-        <fieldset>
-            <legend>Calcule uma tabuada</legend>
-            <div>
-                <label for="numero">Número<input type="number" name="numero" id="start"></label>
-                <button type="button" onclick="tabuada()">Criar Tabuada</button>
-            </div>
+    <div class="background">
+        <h1>TABUADA</h1>
+        <form>
+            <fieldset>
+                <legend>Calcule uma tabuada</legend>
+                <div id="formDiv">
+                    <label for="numero">Número<input type="number" name="numero" id="start"></label>
+                    <button type="button" onclick="tabuada()" id="criar">Criar Tabuada</button>
+                </div>
 
-            <div >
-                <select id="resultado">
+                <div id="conteinerResultado">
+                    <select id="resultado" size="2" multiple>
+                        <option value="temp" id="temp" disabled>+++Tabuada+++</option>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
 
-                </select>
-            </div>
-        </fieldset>
-    </form>
-
-    <script src="script.js"></script>
+        <script src="script.js"></script>
+    </div>
 </body>
 
 </html>
