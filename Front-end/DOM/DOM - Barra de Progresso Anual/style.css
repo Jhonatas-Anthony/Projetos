@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+/* Estilização do body */
+body{
+    background-color: #f0f7da;
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    background-color: #ecf6bb;
+    width: calc(100% - 40vw);
+    border: 1px solid #c9df8a;
+    margin:auto ;
+    height:100vh;
+    padding: 5rem;
+}
+h1{
+    font-size: 5rem;
+    margin-bottom: 4rem;
+}
+
+#floating-text{
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 0;
+    left: 0;
+}
+
+/* Estilização da barra: */
+
+#bar{
+    text-align: center;
+    align-items: center;
+}
+
+div#background-bar{
+    margin: 0 auto;
+    width: 800px;
+    height: 35px;
+    border-radius: 17px;
+    background-color: #c9df8a;
+}
+
+div#inside-bar{
+    height: 35px;
+    border-radius: 17px;
+    background-color: #ff703f;
+}
+
+#text-progress{
+    font-size: 3rem;
+    font-weight: 800;
+    width: 50px;
+}
+
+/* Estilização das informações */
+#info{
+    background-color: #faba66;
+    line-height: 50px;
+    letter-spacing: 2px;
+    width: 50%;
+    margin: 10rem auto 0;
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+#info div,span{
+    font-size: 2.2rem;
+}
+#info span{
+    font-weight: 800;
+}
