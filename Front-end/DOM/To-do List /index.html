@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Best To-do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>A Melhor To-do List</h1>
+        <button type="button" id="theme-toggle">Alternar tema</button>
+    </header>
+    <main>
+        <!-- Adicionar o campo input -->
+        <div id="task-container">
+            <h2>To-do List</h2>
+            <div id="div-text">
+                <span>
+                    <input type="text" id="input-task" placeholder="Adicione sua tarefa" />
+                    <button type="button" id="submit-task">↲</button>
+                </span>
+
+            </div>
+            <div>
+                <ul id="task-list"></ul>
+            </div>
+
+        </div>
+        <!-- Adicionar o cronometro -->
+        <div id="timer-container">
+            <h2>Cronometro</h2>
+            <div id="timer"></div>
+            <div id="onoff">
+                <button id="timer-on" onclick="timerOn()"></button>
+                <button id="timer-off" onclick="timerOff()"></button>
+            </div>
+
+        </div>
+        <!-- Adicionar o campo para as mensagens -->
+        <div id="messages-container">
+            <h2>Histórico</h2>
+            <div id="messages"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
