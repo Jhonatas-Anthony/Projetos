@@ -73,7 +73,7 @@ function createTask(task) {
     // Delete
     deleteTask.addEventListener("click", function () {
         taskList.removeChild(listElement);
-        if (deleteAllTasks){
+        if (taskList.childElementCount === 0){
             deleteAllTasks.style.display = "none"
         }
     })
