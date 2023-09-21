@@ -13,7 +13,7 @@ let segundosPassadoss = Math.floor(tempoPassado / 1000)
 let inside_bar = document.querySelector('#inside-bar')
 inside_bar.setAttribute("style", `width: ${porcentagemDoAno}%`)
 
-let textprogress = document.querySelector('#text-progress')
+let textprogress = document.querySelector('.text-progress')
 textprogress.innerHTML = `${porcentagemDoAno.toFixed(1)} %`
 
 let title = document.querySelector('#title')

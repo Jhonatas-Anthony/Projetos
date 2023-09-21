@@ -5,23 +5,36 @@
 }
 :root{
     font-size: 62.5%;
+    --main-azul-pastel: #A9D0E6;
+    --main-rosa-vintage: #FFB6C1;
+    --main-amarelo-mostarde: #FFD700;
+    --main-verde-menta: #98FB98;
+    --main-marrom-cafe: #8B4513;
+    --main-bege-claro: #F5F5DC;
 }
 /* Estilização do body */
 body{
-    background-color: #f0f7da;
+    background-color: var(--main-bege-claro);
     width: 100vw;
     height: 100vh;
+    color: var(--main-marrom-cafe);
 }
-main{
-    background-color: #ecf6bb;
-    width: calc(100% - 40vw);
-    border: 1px solid #c9df8a;
-    margin:auto ;
-    height:100vh;
-    padding: 5rem;
+header{
+    background-color: var(--main-azul-pastel);
+    height: max-content;
+    padding: 3rem 2rem;
+    align-items: center;
 }
+
 h1{
     font-size: 5rem;
+    padding: 0.5rem;
+
+}
+
+h1>main{
+    align-self: center;
+    justify-self: center;
     margin-bottom: 4rem;
 }
 
@@ -44,13 +57,14 @@ div#background-bar{
     width: 800px;
     height: 35px;
     border-radius: 17px;
-    background-color: #c9df8a;
+    background-color: var(--main-amarelo-mostarde);
 }
 
 div#inside-bar{
-    height: 35px;
+    margin: auto 0;
+    height: 32px;
     border-radius: 17px;
-    background-color: #ff703f;
+    background-color: var(--main-verde-menta);
 }
 
 #text-progress{
